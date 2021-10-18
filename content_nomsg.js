@@ -1,4 +1,5 @@
-var cx_name = document.querySelector("#custh1 > span").textContent;
+var cx_fname = document.querySelector("#custh1 > span").textContent.split(" ")[0];
+var cx_lname = document.querySelector("#custh1 > span").textContent.split(" ")[1];
 var cx_number = document.querySelector("#contact-table > tbody > tr:nth-child(3) > td:nth-child(2) > span").textContent;
 var cx_email = document.querySelector("#contact-table > tbody > tr:nth-child(5) > td:nth-child(2) > a > span").textContent;
 var cx_pchorder = document.querySelector("#wo1content > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(2)").textContent+"GV";
@@ -13,7 +14,8 @@ var cx_note =
 console.log("source page ran");
 
 var cxInfo = {
-    cx_name: cx_name,
+    cx_fname: cx_fname,
+    cx_lname: cx_lname,
     cx_number: cx_number,
     cx_email: cx_email,
     cx_address: cx_address,
@@ -21,6 +23,7 @@ var cxInfo = {
     ///cx_addln: cx_addln,
     ///cx_city: cx_city,
     ///cx_zip: cx_zip,
+    ///cx_date: cx_date,
     cx_pchorder: cx_pchorder,
     cx_reference: cx_reference,
     cx_serial: cx_serial
@@ -29,10 +32,6 @@ var cxInfo = {
 chrome.storage.local.set({
         'cxStorage': cxInfo
         });
-
-var message = "You are being redirected to the work order in GSX, if it does not open make sure you are logged in first."
-
-        window.confirm(message);
 
             window.open(
               "https://gsx2.apple.com/product-details/" + cx_serial, "_blank");
