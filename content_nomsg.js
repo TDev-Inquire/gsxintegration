@@ -5,7 +5,7 @@ var cx_email = document.querySelector("#contact-table > tbody > tr:nth-child(5) 
 var cx_pchorder = document.querySelector("#wo1content > div:nth-child(3) > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(2)").textContent+"GV";
 var cx_reference = document.querySelector("#woh2 > span:nth-child(2)").textContent;
 var cx_address = document.querySelector("#contact-table > tbody > tr:nth-child(6) > td:nth-child(2) > span").textContent;
-var cx_note = document.querySelector("#wo1content > table > tbody > tr:nth-child(3) > td:nth-child(2) > span").textContent;
+var cx_note = document.querySelector("#wo1content > table > tbody > tr:nth-child(1) > td:nth-child(2) > span");
 
 var cx_serial = document.querySelector("#vue-app > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2) > span").textContent;
 
@@ -34,7 +34,7 @@ chrome.storage.local.set({
         });
 
             window.open(
-              "https://gsx2.apple.com/product-details/" + cx_serial, "_blank");
+              "https://gsx2.apple.com/repairs/new?deviceId=" + cx_serial, "_blank");
     
               console.log("Opened New Tab");
     
