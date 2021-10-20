@@ -3,6 +3,7 @@
 var storedLegal = chrome.storage.local.get('cxStorage', function (items) {
   console.log(items); 
 
+<<<<<<< HEAD
   document.querySelector("#rep_cust__ph").value = items.cxStorage.cx_number;
   document.querySelector("#rep_cust__fn").value = items.cxStorage.cx_fname;
   document.querySelector("#rep_cust__ln").value = items.cxStorage.cx_lname;
@@ -10,6 +11,17 @@ var storedLegal = chrome.storage.local.get('cxStorage', function (items) {
   document.querySelector("#rep_cust__notes").value = items.cxStorage.cx_note;
   document.querySelector("#rep_cust__po").value = items.cxStorage.cx_pchorder;
   document.querySelector("#rep_cust__ref").value = items.cxStorage.cx_reference;
+=======
+  document.querySelector("#rep_cust__fn").value = items.cxStorage.cx_number;
+  document.querySelector("#rep_cust__fn").value = items.cxStorage.cx_fname;
+  document.querySelector("#rep_cust__ln").value = items.cxStorage.cx_lname;
+  document.querySelector("#rep_cust__em").value = items.cxStorage.cx_email;
+  document.querySelector("#home-search__textbox").value = items.cxStorage.cx_address;
+  document.querySelector("#rep_cust__notes").value = items.cxStorage.cx_note;
+  document.querySelector("#rep_cust__po").value = items.cxStorage.cx_pchorder;
+  document.querySelector("#rep_cust__ref").value = items.cxStorage.cx_reference;
+  document.querySelector("#home-search__textbox").value = items.cxStorage.cx_serial;
+>>>>>>> ef5b9f9c89f6ac0b6b45cfd5d0ca83e7fa80feb9
   document.querySelector("#rep_cust__class").value = "SINGLE";
   document.querySelector("#rep_cust__st").value = "NC";
   document.querySelector("#repair-header-card > div.repair-header__body > div.repair-customer__body.repair-customer__body-min > span > span > div > div > span > span").value = 
@@ -37,6 +49,7 @@ var storedLegal = chrome.storage.local.get('cxStorage', function (items) {
 console.log("PCRT info pasted into GSX");
 
 });
+<<<<<<< HEAD
 
 
 
@@ -48,3 +61,5 @@ console.log("PCRT info pasted into GSX");
 
 
 
+=======
+>>>>>>> ef5b9f9c89f6ac0b6b45cfd5d0ca83e7fa80feb9
