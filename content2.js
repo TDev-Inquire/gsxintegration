@@ -14,14 +14,11 @@ var storedLegal = chrome.storage.local.get('cxStorage', function (items) {
   document.querySelector("#rep_cust__fn").value = items.cxStorage.cx_fname;
   document.querySelector("#rep_cust__ln").value = items.cxStorage.cx_lname;
   document.querySelector("#rep_cust__em").value = items.cxStorage.cx_email;
-  document.querySelector("#home-search__textbox").value = items.cxStorage.cx_address;
   document.querySelector("#rep_cust__notes").value = items.cxStorage.cx_note;
   document.querySelector("#rep_cust__po").value = items.cxStorage.cx_pchorder;
   document.querySelector("#rep_cust__ref").value = items.cxStorage.cx_reference;
-  document.querySelector("#home-search__textbox").value = items.cxStorage.cx_serial;
   document.querySelector("#rep_cust__class").value = "SINGLE";
   document.querySelector("#rep_cust__st").value = "NC";
-  document.querySelector("#repair-header-card > div.repair-header__body > div.repair-customer__body.repair-customer__body-min > span > span > div > div > span > span").value = 
 
   ///cx_number
   document.querySelector("#repair-header-card > div.repair-header__body > div:nth-child(1) > div.first-row__right-section > div.repair-customer.repair-customer--editable > div.repair-customer__form.el-row > div.repair-customer__left.el-col.el-col-24 > form:nth-child(1) > div > div.el-row > div > div > div.el-col.el-col-15 > div").className = "el-form-item is-success is-required is-no-asterisk el-form-item--mini";
