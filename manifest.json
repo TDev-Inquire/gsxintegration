@@ -2,7 +2,7 @@
     "name": "PCRT + GSX Integration",
     "version": "0.0.3.0",
     "manifest_version": 2,
-    "description": "Copies the PCRT customer info to paste into GSX customer form",
+    "description": "Copies the PCRT customer info to paste into GSX customer form. Last Update: Added GSX Components",
     "permissions": [
         "tabs", "<all_urls>",
         "storage"
