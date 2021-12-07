@@ -31,6 +31,8 @@ document.querySelector("#repair-header-card > div.repair-header__body > div:nth-
 ///reference number not needed (not required)
 ///classification
 document.querySelector("#repair-header-card > div.repair-header__body > div:nth-child(1) > div.first-row__right-section > div.repair-customer.repair-customer--editable > div.repair-customer__form.el-row > div.repair-customer__right.el-col.el-col-24 > form > div > div.el-form-item.repair_class.is-error.is-required.is-no-asterisk.el-form-item--mini").className = "el-form-item repair_class is-success is-required is-no-asterisk el-form-item--mini";
+document.querySelector("#repair-header-card > div.repair-header__body > div:nth-child(1) > div.first-row__right-section > div.repair-customer.repair-customer--editable > div.repair-customer__form.el-row > div.repair-customer__right.el-col.el-col-24 > form > div > div.el-form-item.repair_class.is-error.is-required.is-no-asterisk.el-form-item--mini").className = "el-form-item repair_class is-success is-no-asterisk el-form-item--mini";
+
 ///state
 ///document.querySelector("#customer\\.address\\[0\\]\\.stateCode").className = "el-form-item is-success is-required is-no-asterisk el-form-item--mini";
 /// document.querySelector("#customer\\.address\\[0\\]\\.line1").className = "el-form-item is-success is-required is-no-asterisk el-form-item--mini";
